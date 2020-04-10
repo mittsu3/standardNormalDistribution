@@ -1,12 +1,10 @@
 {
   "expo": {
-    "name": "HelloWorld",
+    "name": "standardNormalDistribution",
     "slug": "standardNormalDistribution",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,11 +16,17 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
-    }
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.mittsu.standardNormalDistribution1st",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-2659333027229908~6468023359"
+      }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/mittsu3/random-generator"
   }
 }
