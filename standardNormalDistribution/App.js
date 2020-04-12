@@ -17,7 +17,7 @@ const sNormalDistStd = (x) => {
 };
 
 export default function App() {
-  const [value, onChangeText] = React.useState(null);
+  const [value, onChangeText] = React.useState("0");
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.topContainer}></View>
@@ -30,7 +30,7 @@ export default function App() {
         />
       </View>
       <View>
-        <Text style={styles.explainText}>確率φ(Z)の値</Text>
+        <Text style={styles.explainText}>確率φ(Z)の値（上側確率）</Text>
       </View>
       <View style={styles.outputArea}>
         <Text style={styles.outputText}>
@@ -44,11 +44,11 @@ export default function App() {
           __DEV__
             ? "ca-app-pub-2659333027229908/7589533330" // テスト広告
             : Platform.select({
-                ios: "ca-app-pub-2659333027229908/7589533330",
-                android: "ca-app-pub-2659333027229908/7589533330", // android
+                ios: "ca-app-pub-2659333027229908/2733217502",
+                android: "ca-app-pub-2659333027229908/2733217502", // android
               })
         }
-        // onDidFailToReceiveAdWithError={this.bannerError}
+        onDidFailToReceiveAdWithError={this.bannerError}
       />
     </SafeAreaView>
   );
